@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <section class="worper">
+        <div class="upload" >
+            <input type="file" accept="image/*" hidden>
+            <img class="img" src="upload.png" alt="">
+            <p><strong>Brows File To Upload</strong> </p>
+        </div>
+         
+        <div class="content">
+             <div class="row size">
+                <div class="column width  inp">
+                    <label for="width">Width</label>
+                    <input type="number">
+                </div>
+                <div class="column height inp">
+                    <label for="Height">Height</label>
+                    <input type="number">
+                </div>
+             </div>
+             <div class=" checkbox row">
+                  <div class="column ratio">
+                    <input type="checkbox" checked>
+                    <label for="ratio">Lock Aspect Ratio</label>
+                  </div>
+
+                  <div class="Height column  quality">
+                    <input type="checkbox">
+                    <label for="quality">Reduce Quality</label>
+                  </div>
+
+             </div>
+             <button class="btn">DOWNLOAD IMAGE</button>
+        </div>
+    </section>    
+</body>
+</html>
