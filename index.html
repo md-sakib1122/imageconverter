@@ -7,40 +7,37 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
+ <body>
+     <section class="worper">
+        <!-- ....for upload section........ -->
+         <div class="upload">
+             <input type="file" accept="image/*" hidden>
+             <img src="upload.png" alt="">
+            <h4>Upload File</h4>
+         </div>
 
-<body>
-    <section class="worper">
-        <div class="upload" >
-            <input type="file" accept="image/*" hidden>
-            <img class="img" src="upload.png" alt="">
-            <p><strong>Brows File To Upload</strong> </p>
-        </div>
-         
-        <div class="content">
-             <div class="row size">
-                <div class="column width  inp">
-                    <label for="width">Width</label>
-                    <input type="number">
+           <div class="bottom">
+               <div class="left">
+                 <label for="width">Width</label>
+                 <input class="width" type="number">
+                 <div>
+                 <input checked type="checkbox" name="checkbox" class="lock-ratio">
+                 <label for="ratio">Lock Aspect Ratio</label>
                 </div>
-                <div class="column height inp">
-                    <label for="Height">Height</label>
-                    <input type="number">
+               </div>
+
+               <div class="right">
+                <label for="height">Height</label>
+                <input class="height" type="number">
+                 <div>
+                   <input type="checkbox" name="checkbox" class="quality">
+                   <label for="ratio">Reduce Quality</label>
                 </div>
-             </div>
-             <div class=" checkbox row">
-                  <div class="column ratio">
-                    <input type="checkbox" checked>
-                    <label for="ratio">Lock Aspect Ratio</label>
-                  </div>
+              </div>
+              <button class="btn">Download Image</button>
 
-                  <div class="Height column  quality">
-                    <input type="checkbox">
-                    <label for="quality">Reduce Quality</label>
-                  </div>
+           </div>
 
-             </div>
-             <button class="btn">DOWNLOAD IMAGE</button>
-        </div>
-    </section>    
-</body>
+     </section>
+ </body>
 </html>
